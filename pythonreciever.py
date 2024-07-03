@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
   dispatcher = dispatcher.Dispatcher()
   ###########################################
-  dispatcher.map("/pose/position", print) ## OSC messages are formatted like URLS
+  dispatcher.map("/raw", print) ## OSC messages are formatted like URLS
   #########################################  check the addresses on the FaceOSC github documentation
   server = osc_server.ThreadingOSCUDPServer(
       (args.ip, args.port), dispatcher)
