@@ -5,7 +5,7 @@ from pythonosc import osc_server
 
 last_emotion = None  # Global variable to store the last emotion value
 last_processed_time = 0  # Global variable to store the time of the last processed message
-debounce_interval = 0.2  # Interval in seconds (e.g., 0.5 seconds)
+debounce_interval = 0.1  # Interval in seconds (e.g., 0.5 seconds)
 
 def handler(address, *args):
     global last_emotion, last_processed_time  # Declare the global variables
