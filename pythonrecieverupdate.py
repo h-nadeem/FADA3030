@@ -24,6 +24,18 @@ def handler(address, *args):
                 print("You're happy!")
             elif emotion == 4:
                 print("You're scared!")
+         # READ INTO A FILE AND STORE CONTENT AS LIST
+        
+            # file = open("c:/Users/Nadeem/FADA3030.gcode", "r")
+            # data = file.read()
+            # print(data)
+            # time = data.count("M10 P1")
+            # print(time)
+            # name = "lasers.pew"
+            # file_path = "c:/Users/Nadeem/FADA3030/number.py"
+            # # f = open(file_path, "x")
+            # with open(file_path, "w") as f:
+            #     f.write(f"{time}")
 
             last_emotion = emotion  # Update the last emotion value
             last_processed_time = current_time  # Update the last processed time
